@@ -2,10 +2,14 @@
 int main()
 {
 	int a, b;
-	while (scanf("%d %d", &a, &b) != EOF)
+	while (1)
 	{
+		scanf("%d %d", &a, &b);
+		if (a == 0 && b == 0)
+			break;
 		if (a > 0 && b < 10)
 			printf("%d \n", a + b);
+		
 	}
 	return 0;
 }
